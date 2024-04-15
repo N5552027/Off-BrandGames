@@ -21,4 +21,14 @@ Round Types:
 6 rows total regardless of letter count.
 
 MEETING 1:
+   How to score guesses:
+      two for-loops inside of each other
+         outside traxks the user's guess
+         inside traxks the mystery word
 
+
+   Loading Files:
+       three individual .txt files for each word type
+            load them into individual vectors
+        three seperate vectors to hold each word type
+            
