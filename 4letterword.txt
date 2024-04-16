@@ -34,7 +34,6 @@ Junk
 Ploy
 Vent
 Quiz
-Puff
 Jade
 Zeal
 Bask
@@ -44,7 +43,6 @@ Daze
 Lush
 Wren
 Numb
-Fizz
 Dour
 Vain
 Glee
