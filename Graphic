@@ -1,0 +1,71 @@
+
+#include <SFML/Graphics.hpp>
+
+#include "Ball.hpp"
+#include "Paddle.hpp"
+#include "boxes.hpp"
+int main()
+{
+
+	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Wordle!");
+
+
+	std::vector<Box> gamebox1;
+	std::vector<Box> gamebox2;
+	std::vector<Box> gamebox3;
+	std::vector<Box> gamebox4;
+	std::vector<Box> gamebox5;
+	std::vector<Box> gamebox6;
+
+	std::vector<std::vector<Box>> gameboard;
+
+	gameboard.emplace(gameboard.begin(), gamebox1);
+	gameboard.emplace(gameboard.begin(), gamebox2);
+	gameboard.emplace(gameboard.begin(), gamebox3);
+	gameboard.emplace(gameboard.begin(), gamebox4);
+	gameboard.emplace(gameboard.begin(), gamebox5);
+	gameboard.emplace(gameboard.begin(), gamebox6);
+	
+	for (int j = 0; j < 6; j++) {
+
+
+		
+		for (int i = 0; i < 5; i++) {
+
+
+			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120*j), sf::Color(192, 192, 192));
+
+			gameboard[j].emplace(gameboard[j].begin(), box);
+
+		}
+
+		
+	}
+
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+		window.clear();
+	
+
+
+		for (int j = 0; j < 5; j++) {
+			for (int i = 0; i < 6; i++) {
+
+				window.draw(gameboard[i][j]);
+
+
+			}
+		}
+
+		window.display();
+	}
+
+	return 0;
+}
