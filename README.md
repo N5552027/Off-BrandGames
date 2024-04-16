@@ -38,14 +38,14 @@ IF THERE'S TIME (LEAST TO MOST IMPORTANT):
     - TIMED MODE
 
 MEETING 1 (4-15):
-   How to score guesses:
-      two for-loops inside of each other
-         outside traxks the user's guess
-         inside traxks the mystery word
+    How to score guesses:
+        two for-loops inside of each other
+        outside traxks the user's guess
+        inside traxks the mystery word
 
    Loading Files:
        three individual .txt files for each word type (word length)
-            load them into individual vectors
+        load them into individual vectors
         three seperate vectors to hold each word type
             
 MEETING 2 (4-16):
