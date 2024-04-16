@@ -61,9 +61,8 @@ MEETING 2 (4-16):
     Needed Functions per gamemode:
         // Generate board
         // Choose Mystery Word
-        // Get Player Guess
-        // CompareGuessToMysteryWord
-        // UPDATE BOARD
+        // Get Player Guess (UPDATED BOARD WITH PLAYER GUESS)
+        // CompareGuessToMysteryWord (UPDATED BOARD WITH COMPARIOSON)
         // DISPLAY STATS (AT A LATER MOMENT IN TIME)
     
     Jobs Finalization:
