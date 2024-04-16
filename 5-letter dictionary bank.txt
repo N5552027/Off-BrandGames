@@ -12,183 +12,114 @@ nerve
 pilot
 quick
 blaze
-    crimp
-    frown
-    hefty
-    joust
-    knife
-    lyche
-    optic
-    quill
-    saint
-    buzzs
-    croon
-    funky
-    hoist
-    juicy
-    loath
-    nymph
-    oomph
-    quite
-    salsa
-    brute
-    donut
-    flask
-    huger
-    jolly
-    leech
-    nexus
-    orate
-    plush
-    quack
-    roach
-    slink
-    thorn
-    unbox
-    vinyl
-    bumpy
-    cozyx
-    fluff
-    hypes
-    joyful
-    laugh
-    nixes
-    opine
-    quaff
-    shirk
-    twist
-    undue
-    fluke
-    hydra
-    jives
-    loony
-    nexus
-    olive
-    quick
-    slime
-    trunk
-    unify
-    fling
-    homer
-    lurch
-    night
-    opium
-    quirk
-    squid
-    trump
-    usurp
-    flyby
-    hefty
-    junta
-    loony
-    nippy
-    optic
-    quote
-    snoop
-    tryst
-    untie
-    flora
-    hymns
-    joker
-    lyche
-    noisy
-    optic
-    quirk
-    strut
-    unify
-    flunk
-    hypes
-    jumbo
-    lunar
-    nexus
-    odium
-    quest
-    shiny
-    taffy
-    usurp
-    flask
-    hypes
-    junta
-    loopy
-    nexus
-    optic
-    quote
-    slush
-    unify
-    fluke
-    hydra
-    jolly
-    lunar
-    nexus
-    optic
-    quirk
-    strut
-    unify
-    flunk
-    hypes
-    jumbo
-    lunar
-    nexus
-    odium
-    quest
-    shiny
-    taffy
-    usurp
-    flask
-    hypes
-    junta
-    loopy
-    nexus
-    optic
-    quote
-    slush
-    unify
-    fluke
-    hydra
-    jolly
-    lunar
-    nexus
-    optic
-    quirk
-    strut
-    unify
-    flunk
-    hypes
-    jumbo
-    lunar
-    nexus
-    odium
-    quest
-    shiny
-    taffy
-    usurp
-    flask
-    hypes
-    junta
-    loopy
-    nexus
-    optic
-    quote
-    slush
-    unify
-    fluke
-    hydra
-    jolly
-    lunar
-    nexus
-    optic
-    quirk
-    strut
-    unify
-    flunk
-    hypes
-    jumbo
-    lunar
-    nexus
-    odium
-    quest
-    shiny
-    taffy
-    usurp
-    flask
-    hypes
+crimp
+frown
+hefty
+joust
+knife
+saint
+funky
+hoist
+juicy
+loath
+nymph
+quite
+salsa
+brute
+donut
+flask
+orate
+plush
+quack
+roach
+slink
+thorn
+unbox
+vinyl
+bumpy
+cozyx
+hypes
+laugh
+nixes
+spine
+shirk
+fluke
+hydra
+jives
+nexus
+olive
+quick
+slime
+trunk
+unify
+fling
+homer
+lurch
+night
+opium
+quirk
+squid
+trump
+usurp
+flyby
+junta
+nippy
+optic
+quote
+tryst
+untie
+flora
+hymns
+joker
+noisy
+strut
+abuse
+cabin
+dairy
+damps
+habit
+jacks
+jades
+mecha
+anime
+macho
+nacho
+sabot
+vague
+whack
+lacks
+crack
+yacht
+table
+adieu
+actor
+flake
+pears
+bread
+money
+loses
+bacon
+bakes
+baked
+sleep
+sprite
+spies
+sniper
+heavy
+scout
+skeet
+sheet
+meets
+niell
+drawn
+borne
+cores
+blink
+might
+farts
+carts
+marts
+chart
+smart
+funds
+shoot
