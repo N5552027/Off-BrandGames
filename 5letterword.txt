@@ -1,3 +1,6 @@
+meant
+slept
+leapt
 upton
 blend
 chomp
@@ -103,9 +106,7 @@ bacon
 bakes
 baked
 sleep
-sprite
 spies
-sniper
 heavy
 scout
 skeet
