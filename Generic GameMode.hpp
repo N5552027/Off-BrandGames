@@ -24,7 +24,7 @@ protected:
 	void chooseMysteryWord(std::string& mysteryWord);
 
 	// prompts user for a guess and stores it for later use;
-	void getPlayerGuess(std::string& guess);
+	std::string getPlayerGuess(int wordLength);
 
 	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
 	void compareGuessToWord(const std::string guess, const std::string word);
