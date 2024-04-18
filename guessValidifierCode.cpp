@@ -1,4 +1,8 @@
-void tempGuessValidifierCode(std::string playerGuess, std::string secretWord) 
+void compareGuess(const std::string& playerGuess) {
+	secretGuessValidifierCode(playerGuess, this->secretWord);
+}
+
+void secretGuessValidifierCode(std::string playerGuess, std::string secretWord) 
 {
 	for (std::string::iterator playerGuessIterator = playerGuess.begin, int guessLetterIndex = 0; playerGuessIterator != playerGuess.end; playerGuessIterator++, guessLetterIndex++) { // TRAVERSE THE PLAYER GUESS
 		for (std::string::iterator secretWordIterator = secretWord.begin, int secretLetterIndex = 0; secretWordIterator != secretWord.end; secretWordIterator++, guessLetterIndex++) { // TRAVERSE THE MYSTERY WORD
