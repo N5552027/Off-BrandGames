@@ -1,5 +1,5 @@
 
-
+//must change to release mode and copy files from debug to release
 #include <SFML/Graphics.hpp>
 
 #include "Ball.hpp"
@@ -12,8 +12,11 @@ int main()
 
 	font.loadFromFile("arial.ttf");
 
-	
-
+	/*sf::Text words;
+	words.setFont(font);
+	words.setString("test");
+	words.setCharacterSize(100);
+	words.setFillColor(sf::Color::White);*/
 
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Wordle!");
 	
@@ -66,7 +69,7 @@ int main()
 		for (int i = 0; i < 5; i++) {
 
 
-			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color(192, 192, 192));
+			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color(99, 102, 106));
 
 			gameboard[j].emplace(gameboard[j].begin(), box);
 
@@ -83,7 +86,7 @@ int main()
 		for (int i = 0; i < 5; i++) {
 
 
-			Guess guess(5, sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color::White, font);
+			Guess guess(100, sf::Vector2f(95 + 120 * i, 5 + 120 * j), sf::Color::White, font);
 
 			wordboard[j].emplace(wordboard[j].begin(), guess);
 
@@ -105,7 +108,11 @@ int main()
 		}
 
 
-
+		wordboard[0][4].setString("w");
+		wordboard[0][3].setString("o");
+		wordboard[0][2].setString("r");
+		wordboard[0][1].setString("d");
+		wordboard[0][0].setString("l");
 
 		
 
@@ -129,7 +136,7 @@ int main()
 
 			}
 		}
-
+		/*window.draw(words);*/
 		window.display();
 	}
 
