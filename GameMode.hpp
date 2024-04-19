@@ -1,6 +1,7 @@
 #pragma once
 #include "Header.hpp"
 
+/* ----------------ABSTRACT CLASS------------------*/
 
 class GameMode {
 protected:
