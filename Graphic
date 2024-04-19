@@ -1,14 +1,22 @@
 
+
 #include <SFML/Graphics.hpp>
 
 #include "Ball.hpp"
 #include "Paddle.hpp"
-#include "boxes.hpp"
 int main()
 {
 
-	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Wordle!");
 
+	sf::Font font;
+
+	font.loadFromFile("arial.ttf");
+
+	
+
+
+	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Wordle!");
+	
 
 	std::vector<Box> gamebox1;
 	std::vector<Box> gamebox2;
@@ -25,22 +33,67 @@ int main()
 	gameboard.emplace(gameboard.begin(), gamebox4);
 	gameboard.emplace(gameboard.begin(), gamebox5);
 	gameboard.emplace(gameboard.begin(), gamebox6);
+
+
+
+	std::vector<Guess> letter1;
+	std::vector<Guess> letter2;
+	std::vector<Guess> letter3;
+	std::vector<Guess> letter4;
+	std::vector<Guess> letter5;
+	std::vector<Guess> letter6;
+
+	std::vector<std::vector<Guess>> wordboard;
+
+	wordboard.emplace(wordboard.begin(), letter1);
+	wordboard.emplace(wordboard.begin(), letter2);
+	wordboard.emplace(wordboard.begin(), letter3);
+	wordboard.emplace(wordboard.begin(), letter4);
+	wordboard.emplace(wordboard.begin(), letter5);
+	wordboard.emplace(wordboard.begin(), letter6);
+
+
 	
+
+
+
+
+
 	for (int j = 0; j < 6; j++) {
 
 
-		
+
 		for (int i = 0; i < 5; i++) {
 
 
-			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120*j), sf::Color(192, 192, 192));
+			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color(192, 192, 192));
 
 			gameboard[j].emplace(gameboard[j].begin(), box);
 
 		}
 
-		
+
 	}
+
+
+	for (int j = 0; j < 6; j++) {
+
+
+
+		for (int i = 0; i < 5; i++) {
+
+
+			Guess guess(5, sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color::White, font);
+
+			wordboard[j].emplace(wordboard[j].begin(), guess);
+
+		}
+
+
+	}
+
+
+
 
 	while (window.isOpen())
 	{
@@ -51,14 +104,27 @@ int main()
 				window.close();
 		}
 
-		window.clear();
-	
 
+
+
+		
+
+		window.clear();
+		
 
 		for (int j = 0; j < 5; j++) {
 			for (int i = 0; i < 6; i++) {
 
 				window.draw(gameboard[i][j]);
+
+
+			}
+		}
+
+		for (int j = 0; j < 5; j++) {
+			for (int i = 0; i < 6; i++) {
+
+				window.draw(wordboard[i][j]);
 
 
 			}
