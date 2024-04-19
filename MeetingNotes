@@ -99,12 +99,24 @@ AGREED TEST CASES:
               - RIGHT COLOR IS IMPLEMENTED
 
 MEETING 3 (4-18):
+Achieved Goals:
+    Internal Code:
+        - Get player Guess
+        - Gamemode classes
+        - compare guess to mystery word
+        - Console screen Game
 
-NEXT MEETING GOALS:
-    - BASELINE GRAPHIC DESIGN
-    - Pseudo-code for function definition
+    Visual/Graphics Code:
+        - Font loading work
 
+MEETING 4 (4-19)
+Achieved Goals:
+    Internal Code:
+        - nearly complete 5LM with print to console screen
 
+    Visual/Graphics Code:
+        - Imported fonts finally (Thank you Andy)
+        - 
 
 
 
