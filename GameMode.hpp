@@ -39,11 +39,14 @@ protected:
 	// displays the different stats of the player
 	void displayStats();
 
-	// normal Game Mode (Guess the mystery word in 6 moves)
+	/************************\
+	|       GAME MODES       |
+ 	\************************/
 	virtual void basicGameMode();
+	virtual void 3LivesEnduranceMode();
 
 	// Print Rules
-	virtual void gameModeRules();
+	void gameModeRules();
 
 public:
 
