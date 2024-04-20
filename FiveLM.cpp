@@ -25,7 +25,7 @@ void FiveLM::runGame()
 		switch (playerMenuChoice) {
 
 		default:
-			std::cout << "DEFAULT" << std::endl;
+			std::cout << "DEFAULT CHOICE" << std::endl;
 			break;
 		case 1:  // PLAY BASIC
 
