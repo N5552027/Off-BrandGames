@@ -86,7 +86,7 @@ void FiveLM::openTXTFile()
 	this->inFileLoad.open("5LetterWord.txt");
 }
 
-void FiveLM::runBasicGameMode() {
+bool FiveLM::runBasicGameMode() {
 
 bool isPlayerCorrect = false;
 int playerGuesses = 1;
@@ -107,10 +107,29 @@ chooseMysteryWord();
 if (isPlayerCorrect == false) { // PLAYER FAILS TO GUESS THE WORD IN 6 TURNS
 
 	std::cout << "Sorry, you lost!" << std::endl;
-	
+	return false;
 }
 else { // PLAYER MANAGES TO GUESS THE MYSTER WORD IN 6 TURNS OR LESS
 	std::cout << "CONGRATS YOU WON!!" << std::endl
 		<< "*trumpets and fanfare plays in the background*" << std::endl;
+	return true;
 }
+}
+
+
+void FiveLM::3LivesEnduranceMode () {
+	int solvedWords, roundCount = 0;
+	int lives = 3;
+	bool roundWon = false;
+	
+	while (lives > 0) {
+		// Display lives && round count
+		
+		// RUN BASIC GAME MODE
+		
+		if (roundWon == false) { // Player fails to win the round
+			lives -= 1;
+		}
+	}
+
 }
