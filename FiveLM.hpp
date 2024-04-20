@@ -11,7 +11,7 @@ private:
 	void openTXTFile() override;
 
 	// runs basic game mode suited for 5LM
-	void basicGameMode() override;
+	bool basicGameMode() override;
 	void 3LivesEnduranceMode() override;
 public:
 
