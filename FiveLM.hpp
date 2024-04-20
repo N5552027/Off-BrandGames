@@ -12,6 +12,7 @@ private:
 
 	// runs basic game mode suited for 5LM
 	void basicGameMode() override;
+	void 3LivesEnduranceMode() override;
 public:
 
 	void runGame() override;
