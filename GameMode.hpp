@@ -42,7 +42,7 @@ protected:
 	/************************\
 	|       GAME MODES       |
  	\************************/
-	virtual void basicGameMode();
+	virtual bool basicGameMode();
 	virtual void 3LivesEnduranceMode();
 
 	// Print Rules
