@@ -112,11 +112,9 @@ void GameMode::gameModeRules()
 		<< "\t Basic Game Mode" << std::endl
 		<< "\t 3-life Endurance Mode" << std::endl;
 
-	std::cout << "Basic gamemode is your basic wordle activity. You have six times to guess the game's chosen mystery word. There are some
-		hard words and there are some easy ones. Play this gamemode as many times as you want." << std::endl;
+	std::cout << "Basic gamemode is your basic wordle activity. You have six times to guess the game's chosen mystery word. There are some hard words and there are some easy ones. Play this gamemode as many times as you want." << std::endl;
 
-	std::cout << "3-life Endurance Mode tests and tracks how many mystery words you can get correct before you lose all three lives. A life is
-		lost only if you cannot guess the mystery word in your six guesses. We will track how many correct words you got." << std::endl;
+	std::cout << "3-life Endurance Mode tests and tracks how many mystery words you can get correct before you lose all three lives. A life is lost only if you cannot guess the mystery word in your six guesses. We will track how many correct words you got." << std::endl;
 
 	std::cout << "GOOD LUCK AND ENJOY THIS SCUFFED VERSION OF WORDLE" << std::endl;
 }
