@@ -1,10 +1,5 @@
 #include "FiveLM.hpp"
 
-void FiveLM::openTXTFile()
-{
-	this->inFileLoad.open("5LetterWord.txt");
-}
-
 void FiveLM::runGame()
 {
 	int playerMenuChoice = 0,
@@ -51,4 +46,15 @@ void FiveLM::runGame()
 		}
 
 	} while (playerMenuChoice != 4);
+}
+
+void FiveLM::openTXTFile()
+{
+	this->inFileLoad.open("5LetterWord.txt");
+}
+
+void FiveLM::runBasicGame() {
+
+
+}
 }
