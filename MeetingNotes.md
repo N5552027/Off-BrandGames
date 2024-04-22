@@ -6,14 +6,14 @@ INTERNAL NAME: LEXI-GUESSY
 
 AKA:
 WORDLE feat. 200 of our favorite 4-5-6 words
-    By: Reuben Hoffer, Max Upton, Finley Blaylock, and Noah Manuel
+    By: Reuben Hoffer, Max Upton, Finley Blaylock, and Noah Manuel (ALL LAB SECTION 11)
 
 IDEAS:
 Player Tracking:
   - fastest solve time && word
   - longest winning/losing streak
 
-Multiple Rounds
+Multiple Rounds?
 
 Round Types:
 - 4 Letters, 5 letters, and 6 letter words
@@ -122,8 +122,29 @@ HAPPY DANKSGIVING!!
 
 Achieved Goals:
     Internal Goals:
-
+        Finalized 3LiveMode
+        Finalized Game mode
+        
     Visual/Graphics Code:
+        Figured out how to clear lines
+
+Meeting 6 (4-22)
+Achieved Goals:
+    Began process of merging graphics and internal game code together. 
 
 
+Update Notes: 
+    Noah - MERGING GRAPHICS AND INGAME CODE IS HARD AF
+
+MEETING 7 (4-23):
+Achieved Goals:
+    - Recorded Youtube Video for video
+        Link: 
+
+
+MEETING 8 (4-24): 
+Meeting Goals:
+    Last minute coding session with the boys
+    Debriefing project
+    Submitting project together 
     
