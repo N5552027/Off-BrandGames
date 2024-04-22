@@ -55,7 +55,7 @@ MEETING 2 (4-16):
         Code is straightforward to implement
     
     Graphic design:
-        - DARK GRAY (unused letter)
+        - DARK GRAY (unsubmitted letter)
         - Gray (letter not present in mystery word)
         - Yellow (Letter present, not right location)
         - Green (Letter present, correct location)
@@ -74,8 +74,6 @@ MEETING 2 (4-16):
         Max: Graphic Design
     
     Possible LIBRARIES:
-        chrono: PLAYER STATS TRACKING
-            https://stackoverflow.com/questions/1735307/c-keeping-track-of-how-many-seconds-has-passed-since-start-of-program
         fstream: LOAD MYSTERY WORD FILES
         iostream: bc duh
         vector: MYSTERY WORD BANK
@@ -105,30 +103,27 @@ Achieved Goals:
         - Gamemode classes
         - compare guess to mystery word
         - Console screen Game
-
     Visual/Graphics Code:
         - Font loading work
 
-MEETING 4 (4-19)
+MEETING 4 (4-19):
 Achieved Goals:
     Internal Code:
         - nearly complete 5LM with print to console screen
-
     Visual/Graphics Code:
         - Imported fonts finally (Thank you Andy)
 
-Meeting 5 (4-20)
+Meeting 5 (4-20):
 HAPPY DANKSGIVING!!
 
 Achieved Goals:
     Internal Goals:
-        Finalized 3LiveMode
-        Finalized Game mode
-        
+        - Finalized 3LiveMode
+        - Finalized Game mode
     Visual/Graphics Code:
-        Figured out how to clear lines
+        - Figured out how to clear lines
 
-Meeting 6 (4-22)
+Meeting 6 (4-22):
 Achieved Goals:
     Began process of merging graphics and internal game code together. 
 
@@ -140,11 +135,14 @@ MEETING 7 (4-23):
 Achieved Goals:
     - Recorded Youtube Video for video
         Link: 
-
+    - Another coding sesh with the boys
 
 MEETING 8 (4-24): 
 Meeting Goals:
     Last minute coding session with the boys
     Debriefing project
     Submitting project together 
-    
+
+
+#WeLoveReuben
+#WeLoveAndy
