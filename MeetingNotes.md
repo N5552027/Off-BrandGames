@@ -51,34 +51,30 @@ MEETING 1 (4-15):
         three seperate vectors to hold each word type
             
 MEETING 2 (4-16):
-    Prioritizing Graphic Design first before going over code
-        Code is straightforward to implement
-    
+
+Prioritizing Graphic Design first before going over code
+Code is straightforward to implement
     Graphic design:
         - DARK GRAY (unsubmitted letter)
         - Gray (letter not present in mystery word)
         - Yellow (Letter present, not right location)
-        - Green (Letter present, correct location)
-    
+        - Green (Letter present, correct location)  
     Needed Functions per gamemode:
         // Generate board
         // Choose Mystery Word
         // Get Player Guess (UPDATED BOARD WITH PLAYER GUESS)
         // CompareGuessToMysteryWord (UPDATED BOARD WITH COMPARIOSON)
         // DISPLAY STATS (AT A LATER MOMENT IN TIME)
-    
     Jobs Finalization:
         Reuben: Function Definer
         Finn: Gamemode Creator
         Noah: Function Definer
-        Max: Graphic Design
-    
+        Max: Graphic Design    
     Possible LIBRARIES:
         fstream: LOAD MYSTERY WORD FILES
         iostream: bc duh
         vector: MYSTERY WORD BANK
         SFML libraries: bc duh
-        
 ACHIEVED GOALS:
        We made our word banks
        created scaffolding for the gamemode
