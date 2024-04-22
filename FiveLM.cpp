@@ -66,9 +66,10 @@ void FiveLM::runGame()
 			break;
 		
 		case 3: // THREE LIVES ENDURANCE MATCH
-
-			
-			
+			system("cls");
+			std::cout << "" << std::endl;
+			3LivesEnduranceMode();
+			system("pause");
 		break;
 		case 4:
 		
@@ -118,18 +119,29 @@ else { // PLAYER MANAGES TO GUESS THE MYSTER WORD IN 6 TURNS OR LESS
 
 
 void FiveLM::3LivesEnduranceMode () {
-	int solvedWords, roundCount = 0;
+	int solvedWords, roundCount, wordsSolved = 0;
 	int lives = 3;
 	bool roundWon = false;
 	
 	while (lives > 0) {
 		// Display lives && round count
-		
+		std::cout << "Lives Remaining: << lives << std::endl
+			<< "Rounds Played: " << roundCount << std::endl
+			<< "Words Solved: " << wordsSolved << std::endl;; 
 		// RUN BASIC GAME MODE
+		roundWon = runBasicGameMode();
 		
 		if (roundWon == false) { // Player fails to win the round
-			lives -= 1;
+			lives = lives - 1;
 		}
+		else { // PLAYER WINS ROUND
+			wordsSolved++;
+		}
+
+		roundCount++;
 	}
 
+	// DISPLAY END OF ROUND STATS
+	std::cout << "END OF GAME STATUS:" << std::endl
+		<< "\t After three lives, you've solved " << wordsSolved << " words.";
 }
