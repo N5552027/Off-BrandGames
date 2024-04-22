@@ -1,4 +1,9 @@
+/*
 
+Notes for Noah:
+	- Convert to a class gameboard to allow the game to edit the functions and stuff
+
+*/
 
 
 
