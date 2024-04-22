@@ -29,14 +29,15 @@ int main()
 
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Wordle!");
 	
+	// USED TO GENERATE BOX ROWS
+	std::vector<Box> gamebox1; // Row 1
+	std::vector<Box> gamebox2; // Row 2
+	std::vector<Box> gamebox3; // Row 3
+	std::vector<Box> gamebox4; // Row 4
+	std::vector<Box> gamebox5; // Row 5
+	std::vector<Box> gamebox6; // Row 6
 
-	std::vector<Box> gamebox1;
-	std::vector<Box> gamebox2;
-	std::vector<Box> gamebox3;
-	std::vector<Box> gamebox4;
-	std::vector<Box> gamebox5;
-	std::vector<Box> gamebox6;
-
+	// GAME BOARD (ALLOWS CHANGE OF COLOR)
 	std::vector<std::vector<Box>> gameboard;
 
 	gameboard.emplace(gameboard.begin(), gamebox1);
@@ -47,14 +48,15 @@ int main()
 	gameboard.emplace(gameboard.begin(), gamebox6);
 
 
+	// PLAYER GUESS LETTERS (USE TO REPLACE STRINGS)
+	std::vector<Guess> letter1; // PLAYER GUESS 1
+	std::vector<Guess> letter2; // PLAYER GUESS 2
+	std::vector<Guess> letter3; // PLAYER GUESS 3
+	std::vector<Guess> letter4; // PLAYER GUESS 4
+	std::vector<Guess> letter5; // PLAYER GUESS 5
+	std::vector<Guess> letter6; // PLAYER GUESS 6
 
-	std::vector<Guess> letter1;
-	std::vector<Guess> letter2;
-	std::vector<Guess> letter3;
-	std::vector<Guess> letter4;
-	std::vector<Guess> letter5;
-	std::vector<Guess> letter6;
-
+	// PLAYER GUESS WORDLE (LETTERS ARE SEPERATE TO THEIR BOXES)
 	std::vector<std::vector<Guess>> wordboard;
 
 	wordboard.emplace(wordboard.begin(), letter1);
@@ -71,11 +73,11 @@ int main()
 
 
 
-	for (int j = 0; j < 6; j++) {
+	for (int j = 0; j < 6; j++) { // prints each row
 
 
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) { // print each box 
 
 
 			Box box(sf::Vector2f(100, 100), sf::Vector2f(80 + 120 * i, 20 + 120 * j), sf::Color(99, 102, 106));
@@ -88,11 +90,11 @@ int main()
 	}
 
 
-	for (int j = 0; j < 6; j++) {
+	for (int j = 0; j < 6; j++) { // print each row
 
 
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) { // print each box
 
 
 			Guess guess(100, sf::Vector2f(95 + 120 * i, 5 + 120 * j), sf::Color::White, font);
@@ -108,7 +110,7 @@ int main()
 
 
 
-	while (window.isOpen())
+	while (window.isOpen()) // openwindow
 	{
 		sf::Event event;
 		while (window.pollEvent(event))
@@ -119,15 +121,24 @@ int main()
 			else if (event.type == sf::Event::KeyReleased) {
 
 				if (j > 6) {
-
-
+					// prevents line overloading
 				}
+
+				else if (event.key.code == sf::Keyboard::BackSpace) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					if (i != 4) {
+						wordboard[j][i + 1].setString(" ");
+
+						i++;
+					}
+				}
+
 
 			else if (event.key.code == sf::Keyboard::Enter) {
 
-				std::cout << "next line" << std::endl;
-
-
+				// PLAYER SUBMITS A GUESS
 
 				j++;
 				i = 4;
@@ -400,17 +411,9 @@ int main()
 											i--;
 
 
-											}
-				else if (event.key.code == sf::Keyboard::BackSpace) {
-
-										/*std::cout << "key pressed" << std::endl;*/
-
-									wordboard[j][i+1].setString(" ");
-
-													i++;
-
-
-													}
+				}
+				
+				
 				
 			}
 			
@@ -455,11 +458,7 @@ int main()
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace))
 			{
-				if (i != 4) {
-					wordboard[j][i + 1].setString(" ");
-
-					i++;
-				}
+				
 			}
 
 
@@ -481,9 +480,9 @@ int main()
 
 
 
-		window.clear();
+		window.clear(); // CLEAN Board
 
-
+		// REDRAW BOXES
 		for (int j = 0; j < 5; j++) {
 			for (int i = 0; i < 6; i++) {
 
@@ -493,6 +492,7 @@ int main()
 			}
 		}
 
+		// REDRAW LETTERS
 		for (int j = 0; j < 5; j++) {
 			for (int i = 0; i < 6; i++) {
 
