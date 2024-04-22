@@ -88,8 +88,8 @@ void FiveLM::openTXTFile()
 }
 
 bool FiveLM::runBasicGameMode() {
-
-bool isPlayerCorrect = false;
+								// REPLACE playerGuess with Vector of boxes later
+bool isPlayerCorrect = false;					
 int playerGuesses = 1;
 
 chooseMysteryWord();
@@ -97,7 +97,7 @@ chooseMysteryWord();
 	do 
 	{	
 		playerGuess = getPlayerGuess(cols);
-		compareGuessToWord(playerGuess, mysteryWord); // CHANGE TO BOOL OPERATION LATER
+		isPlayerCorrect = compareGuessToWord(playerGuess, mysteryWord); // CHANGE TO BOOL OPERATION LATER
 
 		if (isPlayerCorrect == false) {
 			++playerGuesses; // PLAYER GUESS NUMBER CAN BE USED TO CHECK WHICH ROW TO MANAGE/EDIT ON THE VECTOR
@@ -125,7 +125,7 @@ void FiveLM::3LivesEnduranceMode () {
 	
 	while (lives > 0) {
 		// Display lives && round count
-		std::cout << "Lives Remaining: << lives << std::endl
+		std::cout << "Lives Remaining: " << lives << std::endl
 			<< "Rounds Played: " << roundCount << std::endl
 			<< "Words Solved: " << wordsSolved << std::endl;; 
 		// RUN BASIC GAME MODE
