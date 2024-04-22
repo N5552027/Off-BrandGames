@@ -1,4 +1,7 @@
 
+
+
+
 //must change to release mode and copy files from debug to release
 #include <SFML/Graphics.hpp>
 
@@ -7,7 +10,8 @@
 int main()
 {
 
-
+	int i = 4;
+	int j = 0;
 	sf::Font font;
 
 	font.loadFromFile("arial.ttf");
@@ -95,6 +99,7 @@ int main()
 
 	}
 
+	int keyCounter = 0;
 
 
 
@@ -105,19 +110,374 @@ int main()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+
+			else if (event.type == sf::Event::KeyReleased) {
+
+				if (j > 6) {
+
+
+				}
+
+			else if (event.key.code == sf::Keyboard::Enter) {
+
+				std::cout << "next line" << std::endl;
+
+
+
+				j++;
+				i = 4;
+
+			}
+
+
+			else if (i < 0) {
+
+			}
+			
+			
+				else if (event.key.code == sf::Keyboard::A) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("A");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::B) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("B");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::C) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("C");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::D) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("D");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::E) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("E");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::F) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("F");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::G) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("G");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::H) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("H");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::I) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("I");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::J) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("J");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::K) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("K");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::L) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("L");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::M) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("M");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::N) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("N");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::O) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("O");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::P) {
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("P");
+
+					i--;
+
+
+				}
+				else if (event.key.code == sf::Keyboard::Q){
+
+					/*std::cout << "key pressed" << std::endl;*/
+
+					wordboard[j][i].setString("Q");
+
+
+					i--;
+
+
+					}
+				else if (event.key.code == sf::Keyboard::R) {
+
+						/*std::cout << "key pressed" << std::endl;*/
+
+						wordboard[j][i].setString("R");
+
+					i--;
+
+
+					}
+				else if (event.key.code == sf::Keyboard::S) {
+
+						/*std::cout << "key pressed" << std::endl;*/
+
+							wordboard[j][i].setString("S");
+
+								i--;
+
+
+								}
+				else if (event.key.code == sf::Keyboard::T) {
+
+													/*std::cout << "key pressed" << std::endl;*/
+
+								wordboard[j][i].setString("T");
+
+									i--;
+
+
+									}
+				else if (event.key.code == sf::Keyboard::U) {
+
+							/*std::cout << "key pressed" << std::endl;*/
+
+							wordboard[j][i].setString("U");
+
+								i--;
+
+
+										}
+				else if (event.key.code == sf::Keyboard::V) {
+
+								/*std::cout << "key pressed" << std::endl;*/
+
+								wordboard[j][i].setString("V");
+
+									i--;
+
+
+								}
+				else if (event.key.code == sf::Keyboard::W) {
+
+								/*std::cout << "key pressed" << std::endl;*/
+
+								wordboard[j][i].setString("W");
+
+									i--;
+
+
+									}
+				else if (event.key.code == sf::Keyboard::X) {
+
+							/*std::cout << "key pressed" << std::endl;*/
+
+							wordboard[j][i].setString("X");
+
+									i--;
+
+
+									}
+				else if (event.key.code == sf::Keyboard::Y) {
+
+								/*std::cout << "key pressed" << std::endl;*/
+
+									wordboard[j][i].setString("Y");
+
+											i--;
+
+
+											}
+				else if (event.key.code == sf::Keyboard::Z) {
+
+									/*std::cout << "key pressed" << std::endl;*/
+
+									wordboard[j][i].setString("Z");
+
+											i--;
+
+
+											}
+				else if (event.key.code == sf::Keyboard::BackSpace) {
+
+										/*std::cout << "key pressed" << std::endl;*/
+
+									wordboard[j][i+1].setString(" ");
+
+													i++;
+
+
+													}
+				
+			}
+			
 		}
-
-
-		wordboard[0][4].setString("w");
-		wordboard[0][3].setString("o");
-		wordboard[0][2].setString("r");
-		wordboard[0][1].setString("d");
-		wordboard[0][0].setString("l");
+		
 
 		
+
+		
+
+
+
+
+
+
+		//attempt at live typing loop
+
+
+		/*if (event.type == sf::Event::KeyReleased) {
+
+
+			std::cout << "key pressed" << std::endl;
+		}*/
+		//if (event.key.code == sf::Keyboard::S) {
+
+
+		//	/*wordboard[j][i].setString("s");
+		//	i--;*/
+
+		//	std::cout << "key pressed" << std:: endl;
+		//	
+
+		//}
+
+			/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+			{
+
+				wordboard[j][i].setString("s");
+				i--;
+
+			}
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace))
+			{
+				if (i != 4) {
+					wordboard[j][i + 1].setString(" ");
+
+					i++;
+				}
+			}
+
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+			{
+
+				j++;
+
+			}*/
+
+
+
+
+
+
+
+
+
+
+
 
 		window.clear();
-		
+
 
 		for (int j = 0; j < 5; j++) {
 			for (int i = 0; i < 6; i++) {
