@@ -11,8 +11,6 @@
 #include <stdlib.h>
 #include <SFML/Graphics.hpp>
 
-
-
 /****************************
       CHANGES 4-22-24
     - INCORPORATING ALL HEADER FILES INTO A SINGULAR UNIVERSAL HEADER FILE TO CHOOSE FROM
@@ -24,3 +22,4 @@
 #include "SixLM.hpp"
 #include "FiveLM.hpp"
 #include "FourLM.hpp"
+#include "classTest.hpp"
