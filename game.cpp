@@ -1,8 +1,5 @@
 #include "game.hpp"
 
-#include "Header.hpp"
-# include <string>
-
 
 void GameMode::loadWordBank()
 {
