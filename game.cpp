@@ -16,8 +16,7 @@ void GameMode::loadWordBank()
 void GameMode::chooseMysteryWord()
 {
 	mysteryWord = mysteryWordBank[rand() % mysteryWordBankSize];
-	std::cout << "Mystery Word = " << mysteryWord << std::endl;
-
+	// std::cout << "Mystery Word = " << mysteryWord << std::endl;
 }
 
 bool GameMode::compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord)
