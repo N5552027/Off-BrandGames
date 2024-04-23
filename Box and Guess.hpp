@@ -17,6 +17,7 @@ public:
 
 	void setGreen();
 	void setYellow();
+	void setGray();
 
 
 private:
