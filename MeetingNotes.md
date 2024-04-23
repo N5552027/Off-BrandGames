@@ -133,6 +133,9 @@ Achieved Goals:
         Link: 
     - Another coding sesh with the boys
 
+ABSOLUTE GOAL: HAVE 5LM ALMOST COMPLETELY FINISHED BY END OF DAY IN ORDER TO START OTHER GAME MODES (4LM 6LM)
+ABSOLUTE GOAL: ALL HANDS ON DECK FOR GRAPHICS CODING ON TUESDAY
+
 MEETING 8 (4-24): 
 Meeting Goals:
     Last minute coding session with the boys
