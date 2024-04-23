@@ -2,6 +2,7 @@
 
 void FiveLM::runGame()
 {
+	
 	int playerMenuChoice = 0,
 		vectorIndex = 0,
 		leaveMenuOption = -1;
@@ -13,39 +14,37 @@ void FiveLM::runGame()
 
 	do
 	{
-		system("cls");
-		std::cout << "FIVE LETTER GAME MODE:" << std::endl;
-		
-		// DISPLAY PLAYER STATS HERE PERHAPS?
-		
+		window.clear();		
 		std::cin >> playerMenuChoice;
 
 
 		switch (playerMenuChoice) {
 
 		default:
-			std::cin.clear();
-			system("cls");
-			
-			std::cout << "DEFAULT CHOICE" << std::endl;
-			break;
+		std::cin.clear();
+		window.clear();
+		std::cout << "DEFAULT CHOICE" << std::endl;
+		break;
+		
 		case 1:  // PLAY BASIC
-			std::cin.clear();
-			system("cls");
-			
-			do 
-			{
-				system("cls");
-				std::cout << "PLAYING BASIC GAME MODE (IT'S BASICALLY WORDLE)" << std::endl;
-			
-				runBasicGameMode();
+		std::cin.clear();
+		system("cls");
 
-				std::cout << "\n\n" << std::endl; // SEPERATES THE GAME NEEDED		
-
-				std::cout << "Would you like to play again? (0 for yes, 1 for no)" << std::endl;
-				std::cin >> leaveMenuOption;
+		bool throwaway;
+	
+		do 
+		{
+			window.clear();
+			std::cout << "PLAYING BASIC GAME MODE (IT'S BASICALLY WORDLE)" << std::endl;
 			
-			} while(leaveMenuOption != 1);
+			throwaway = runBasicGameMode();
+
+			std::cout << "\n\n" << std::endl; // SEPERATES THE GAME NEEDED		
+
+			std::cout << "Would you like to play again? (0 for yes, 1 for no)" << std::endl;
+			std::cin >> leaveMenuOption;
+			
+		} while(leaveMenuOption != 1);
 			
 			break;
 		case 2: // PRINT WORD BANK [THIS CASE WILL NOT BE PRESENT IN THE FINAL BUILD]
