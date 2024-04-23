@@ -31,13 +31,7 @@ protected:
 	std::string getPlayerGuess(int wordLegth);
 
 	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
-	void compareGuessToWord(std::string playerGuess, std::string secretWord);
-
-	// updates the current box with the type it needs to be
-	void updateBox(int boxType, int row, int cols);
-
-	// displays the different stats of the player
-	void displayStats();
+	bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord);
 
 	/************************\
 	|       GAME MODES       |
