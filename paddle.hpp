@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-
+#include <iostream>
 class Box : public sf::RectangleShape
 {
 public:
@@ -17,7 +17,6 @@ public:
 
 	void setGreen();
 	void setYellow();
-	void setGray();
 
 
 private:
@@ -38,9 +37,12 @@ public:
 		this->setPosition(pos);
 		this->setFillColor(color);
 		this->setFont(font);
-		this->setString("a");
+		this->setString(" ");
+		
 	}
-
-
+	
+	std::string getstring(void) {
+		return this->getString();
+	}
 
 };
