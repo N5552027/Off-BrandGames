@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <iostream>
+#include "header.hpp"
 class Box : public sf::RectangleShape
 {
 public:
@@ -15,9 +15,24 @@ public:
 
 	}
 
-	void setGreen();
-	void setYellow();
+	void setGreen() {
 
+
+		this->setFillColor(sf::Color::Green);
+	}
+	void setYellow() {
+
+
+		this->setFillColor(sf::Color::Yellow);
+
+
+	}
+	void setGrey() {
+
+
+
+		this->setFillColor(sf::Color(99, 102, 106));
+	}
 
 private:
 
