@@ -142,6 +142,8 @@ Meeting Goals:
     Debriefing project
     Submitting project together 
 
+DEMO YOUTUBE VIDEO: https://youtu.be/ptP_fntMdVE?si=hApwDxirAEuL1FvL
+
 
 #WeLoveReuben
 #WeLoveAndy
