@@ -1,6 +1,6 @@
 #pragma once
 #include "header.hpp"
-#include "Paddle.hpp"
+#include "boards.hpp"
 /* ----------------ABSTRACT CLASS------------------*/
 
 class GameMode {
@@ -21,30 +21,37 @@ protected:
 	virtual void openTXTFile();
 	void loadWordBank();
 	
-	// generates the blank board with the correct # of dark grey boxes derived from row & cols count
+	
 
 
 	// takes a random word from the dedicated mode file, and designates it as the word
 	void chooseMysteryWord();
 
-	// prompts user for a guess and stores it for later use;
-	
-
-	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
-	
-
-	/************************\
-	|       GAME MODES       |
-	\************************/
 	
 	
 
-	// Print Rules
+	
+	
 
 
 public:
+	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
+	virtual bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord) = 0;
 
+
+	
+	
+
+};
+
+class fiveLetters : public GameMode
+{
+
+public:
+
+	
 	bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord);
-	/*virtual void runGame();*/
+
+
 
 };
