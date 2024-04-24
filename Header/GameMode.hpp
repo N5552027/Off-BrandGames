@@ -1,12 +1,13 @@
 #pragma once
 #include "Header.hpp"
+#include "Graphics.hpp"
 
-/* ----------------ABSTRACT CLASS------------------*/
+// === ABSTRACT CLASS ===
 
 class GameMode {
 protected:
 
-// ===== DATA MEMBERS =====
+	// ===== DATA MEMBERS =====
 	int lives = 3;
 	int rows = 6;
 	int mysteryWordBankSize;
@@ -16,8 +17,8 @@ protected:
 	std::string mysteryWord;
 	std::string playerGuess;
 
-// ===== FUNCTIONS =====
-	// LOAD WORD BANK FUNCTIONS 
+	// ===== FUNCTIONS =====
+		// LOAD WORD BANK FUNCTIONS 
 	virtual void openTXTFile();
 	void loadWordBank();
 
@@ -26,18 +27,15 @@ protected:
 
 	// takes a random word from the dedicated mode file, and designates it as the word
 	void chooseMysteryWord();
-	
-	// prompts user for a guess and stores it for later use;
-	std::string getPlayerGuess(int wordLegth);
 
 	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
 	bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord);
 
 	/************************\
 	|       GAME MODES       |
- 	\************************/
+	\************************/
 	virtual bool basicGameMode();
-	virtual void 3LivesEnduranceMode();
+	virtual void ThreeLivesEnduranceMode();
 
 	// Print Rules
 	void gameModeRules();
