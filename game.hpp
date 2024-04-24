@@ -1,7 +1,6 @@
 #pragma once
 #include "header.hpp"
-#include "Box.hpp"
-#include "guess.hpp"
+#include "boards.hpp"
 /* ----------------ABSTRACT CLASS------------------*/
 
 class GameMode {
@@ -19,31 +18,46 @@ public:
 
 	// ===== FUNCTIONS =====
 		// LOAD WORD BANK FUNCTIONS 
-	virtual void openTXTFile();
-	void loadWordBank();
-
-	// generates the blank board with the correct # of dark grey boxes derived from row & cols count
+	
+	virtual void loadWordBank()=0;
+	
+	
 
 
 	// takes a random word from the dedicated mode file, and designates it as the word
-	void chooseMysteryWord(const std::string& filePath);
+	virtual void chooseMysteryWord(const std::string& filePath) = 0;
 
-	// prompts user for a guess and stores it for later use;
+	
+	
+
+	
+	
+
 
 
 	// compares the guess to the word, and determines what letters are correct, which ones are in the word but not in the right spot, and which aren't in the word.
+	virtual bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord) = 0;
 
 
-	/************************\
-	|       GAME MODES       |
-	\************************/
-
-
-
-	// Print Rules
-
-
-	bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string mysteryWord);
-	/*virtual void runGame();*/
+	
+	
 
 };
+
+class fiveLetters : public GameMode
+{
+
+public:
+
+	
+	bool compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord);
+
+	void fiveLetters::chooseMysteryWord(const std::string& filePath);
+	void fiveLetters::loadWordBank();
+
+	
+	
+private:
+	
+};
+
