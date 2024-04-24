@@ -1,4 +1,7 @@
 #include "game.hpp"
+#include "boards.hpp"
+#include "header.hpp"
+
 
 
 void GameMode::loadWordBank()
@@ -16,24 +19,29 @@ void GameMode::loadWordBank()
 void GameMode::chooseMysteryWord()
 {
 	mysteryWord = mysteryWordBank[rand() % mysteryWordBankSize];
-	// std::cout << "Mystery Word = " << mysteryWord << std::endl;
+	std::cout << "Mystery Word = " << mysteryWord << std::endl;
+
 }
 
-bool GameMode::compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord)
+bool fiveLetters ::compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<Box>& guessRow, std::string secretWord)
 {
 	char letter = '\0';
-	for (int i = 0, j = 4; i < 5; i++, j--) {
+	int n = 0;
 
+	for (int i = 0; i < 5; i++) {
+		
 
 
 		for (int k = 0; k < 5; k++) {
 
-			 letter = playerGuess[j].getstring()[0];
+			 letter = playerGuess[i].getstring()[0];
 
-			std::cout << letter << std::endl;
+			
 			if ( letter == secretWord[k]) {
-
-				guessRow[j].setYellow();
+				
+				
+				guessRow[i].setYellow();
+				
 			}
 
 
@@ -42,13 +50,20 @@ bool GameMode::compareGuessToWord(std::vector<Guess>& playerGuess, std::vector<B
 
 
 
-		letter = playerGuess[j].getstring()[0];
+		letter = playerGuess[i].getstring()[0];
 		if (letter == secretWord[i]) {
 
-			guessRow[j].setGreen();
+			
+			guessRow[i].setGreen();
+			n++;
 
 		}
 
+		if (n == 5) {
+
+			return true;
+			
+		}
 
 
 	}
@@ -65,3 +80,4 @@ void GameMode::openTXTFile()
 {
 	std::cout << "OPENING FILE STREAM" << std::endl;
 }
+
