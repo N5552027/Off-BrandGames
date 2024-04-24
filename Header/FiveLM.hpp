@@ -2,6 +2,7 @@
 
 #include "Header.hpp"
 #include "GameMode.hpp"
+#include "Graphics.hpp"
 
 class FiveLM : public GameMode {
 private:
@@ -12,7 +13,7 @@ private:
 
 	// runs basic game mode suited for 5LM
 	bool basicGameMode() override;
-	void 3LivesEnduranceMode() override;
+	void ThreeLivesEnduranceMode() override;
 public:
 
 	void runGame() override;
